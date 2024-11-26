@@ -1,29 +1,32 @@
-2024-11-25 22:48:45,212 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 22:50:28,837 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:15:36,121 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:15:45,440 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:16:11,228 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:17:59,225 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:18:51,221 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:19:43,792 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:20:00,220 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:20:07,234 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:20:26,390 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:20:49,962 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:20:57,728 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:21:35,622 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:21:51,287 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:22:36,728 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:24:33,120 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:25:03,510 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:25:25,450 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:25:34,300 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:25:50,909 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:27:14,635 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:27:52,427 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:28:07,055 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:28:26,545 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:28:42,548 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:28:50,298 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:29:04,500 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
-2024-11-25 23:29:17,709 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
+2024-11-26 19:22:03,382 ERROR: Exception on /translate [POST] [in /Users/hoatran/Documents/Microblog/microblog/lib/python3.12/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/Users/hoatran/Documents/Microblog/microblog/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hoatran/Documents/Microblog/microblog/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hoatran/Documents/Microblog/microblog/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hoatran/Documents/Microblog/microblog/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hoatran/Documents/Microblog/microblog/lib/python3.12/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hoatran/Documents/Microblog/app/routes.py", line 223, in translate_text
+    data['source_language'],
+    ~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'source_language'
+2024-11-26 19:23:01,405 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
+2024-11-26 19:23:09,191 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
+2024-11-26 19:23:17,911 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
+2024-11-26 19:23:23,346 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
+2024-11-26 19:23:30,716 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
+2024-11-26 19:23:36,782 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
+2024-11-26 19:23:47,881 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
+2024-11-26 19:23:53,907 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
+2024-11-26 19:24:05,760 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
+2024-11-26 19:24:14,634 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
+2024-11-26 19:24:22,875 INFO: Microblog startup [in /Users/hoatran/Documents/Microblog/app/__init__.py:55]
